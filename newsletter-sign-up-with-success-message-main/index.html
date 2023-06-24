@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="main" id="main">
+  <div class="register">
+    <h1>Stay Updated</h1>
+    <p class="p1">join 60,000+product managers monthly updates on:</p>
+    <div class="paras">
+      <ul>
+        <li>Product descovery and building what matters</li>
+        <li>measuring to ensure updates are a success</li>
+        <li>and much more</li>
+      </ul>
+  </div>
+    <div class="form">
+      <div class="m">
+      <label>Email Address</label>
+      <label id="msg">Invalid Email</label>
+    </div>
+      <input type="email" placeholder="exampe@example.com" id="email">
+      <button onclick=reg()>Subscribe to monthly Newsletters</button>
+    </div>
+  </div>
+  <div class="imageDiv">
+    <img src="./assets/images/illustration-sign-up-desktop.svg" class="img" alt="img">
+    <img src="./assets/images/illustration-sign-up-mobile.svg" class="img1">
+  </div>
+
+</div>
+ <div class="success" id="success">
+  <img src="./assets/images/icon-success.svg" alt="success">
+  <h1>Thanks For subscribing!</h1>
+  <p >A confirmation email has been sent to <span id="zemail"></span>.please open it
+  and click the button to confirm your subscribtion.</p>
+  <button class="btn1" onclick=done()>Dismiss message</button>
+
+ </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nour Hijazi</a>.
+  </div> -->
+
+  <script type="text/javascript" src="index.js"></script> 
+</body>
+</html>
